@@ -21,7 +21,14 @@ a  {style=text-align:left;font-family:"Lucida Sans Unicode",sans-serif;font-size
   <a href="www.amazon.com">Amazon</a>
   <a href="www.google.com">Google</a>
 <script>
-<button onload="this.innerHTML=welcome()">Welcome!</button>
+$("IMG_2562.JPG").hover(makeBigger, returnToOriginalSize);
+
+function makeBigger() {
+    $(this).css({height: '+=10%', width: '+=10%'});
+}
+function returnToOriginalSize() {
+    $(this).css({height: "300px", width: "500px"});
+}
 </script  
 </body>
 </html>
